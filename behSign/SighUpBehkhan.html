@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+
+  <link rel="stylesheet" href="./SignUpPageCSS.css">
+  <title>بهخوان | بهتر انتخاب کن،بهتر بخوان</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="logoutbootstrapJS.js"></script>
+  <script src="./SignUpPageJS.js"></script>
+
+</head>
+
+
+<body>
+
+    <header class="header">
+
+
+    <div class="navbar d-flex flex-column flex-md-row align-items-center ">
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active back" href="#">
+            بازگشت به صفحه اصلی
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    </header>
+
+
+  <div class="m-0 d-flex row justify-content-center ">
+
+    <div class="col-12  col-md-6">
+      <div>
+
+         <div class="d-flex justify-content-center container">
+
+            <button class="signbtn "> ثبت نام </button>
+         </div>
+
+         <div class="logo d-flex justify-content-center align-items-center">
+                <img src="./Behkhan.Logo.png" alt="لوگو بهخوان" >
+         </div>
+
+      <div class="dialog d-flex justify-content-center align-items-center flex-wrap " >
+        <p>کتاب خواندن مهم است، کتاب خوب خواندن مهم‌تر</p>
+      </div>
+ 
+      </div>
+
+
+      <div class=" d-flex justify-content-center formwide">
+
+        <form class="form-container justify-content-center d-flex flex-column " id="formvalidation">
+          <label for="fname"></label><br>
+          <input type="text" id="inputTest" onkeyup="cOmpleteinput()"  maxlength="20" oninput="pErsianchecker()"  class="inputAlef inputstyle d-inline-block " placeholder="نام و نام خانوادگی"><br>
+          <p class="error2 inputerror">فقط حروف فارسی</p>
+
+          <label for="lname"></label><br>
+          <input type="text" id="inputTest2"  onkeyup="cOmpleteinput()" maxlength="16" oninput="lAtinChecker()"  class="inputAZ inputstyle" placeholder="نام کاربری"><br>
+          <p class="error1 inputerror">فقط حروف لاتین</p>
+
+          <label for="age"></label><br>
+          <input type="text" id="inputTest3"  onkeyup="cOmpleteinput()" class="inputstyle inputpl" maxlength="11" oninput="nUmberchecker()" placeholder="شماره همراه مثال(09125986366)"><br>
+          <p class="error inputerror">شماره تلفن وارد شده اشتباه است</p>
+
+          <label for="age"></label><br>
+          <div class="password d-flex">
+            <input type="password"  onkeyup="cOmpleteinput()" id="myInput" minlength="6" class="intot inputstyle border-0 input" placeholder="  رمز عبور (حداقل 6 کاراکتر)">
+            <span type="checkbox" class="d-flex align-items-center far fa-eye passwordshow" onclick="sHowpassword()" id="myInput"></span> 
+          </div>
+
+
+          <p class="conditions rule"> با ثبت نام در بهخوان (Behkhaan) شما شرایط و قوانین</span> استفاده از سرویس‌ها و
+            قوانین حریم خصوصی</span> آن را می‌پذیرید. </p>
+
+
+          <button class="sign-up-btn d-flex align-items-center justify-content-center buttonstyle" disabled="disabled" id="btdis" type="submit">
+            ثبت نام
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
